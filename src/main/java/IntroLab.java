@@ -24,11 +24,8 @@ public class IntroLab {
                                   boolean likes_cats, String message) {
         String message_to_print = greeting + "! My name is " + name + "! ";
 
-        if (likes_cats) {
-            message_to_print += "I like cats more than dogs! ";
-        } else {
-            message_to_print += "I like dogs more than cats! ";
-        }
+        if (likes_cats) {message_to_print += "I like cats more than dogs! ";}
+        else {message_to_print += "I like dogs more than cats! ";}
 
         return message_to_print + message;
     }
@@ -36,11 +33,13 @@ public class IntroLab {
     /* TODO: In the space below, write your our method.
      *       The method should be named with your utorID and should call
      *       printLabMessage with some parameters.
-     *
+
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
      */
-
+    public static String gilanija() {
+        return printLabMessage("Hey", "Janel", true, "Live life full size :)");
+    }
     /**
      * An example method that calls on printLabMessage.
      */
@@ -51,7 +50,7 @@ public class IntroLab {
 
 
     public static void main(final String[] args) {
-        System.out.println(exampleStudent());
+        System.out.println(gilanija());
 
         /* TODO: Add a call to the method you wrote in this main method,
          *        and print the results of it.
